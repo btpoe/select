@@ -12,7 +12,8 @@
 		};
 
 		var o = {
-
+			component: 'Select',
+			valueClass: 'value'
 		};
 
 		select.init = function (options) {
@@ -37,13 +38,15 @@
 		}
 
 		function prepare() {
-			el.wrap = $('<div class="Select">');
-			el.value = $('<span class="Select-value">');
 
-			el.wrap
-				.insertAfter(el.select)
-				.append(el.select)
-				.append(el.value);
+			if (!(el.wrap = el.select.parent('.' + o.component )).length) {
+				el.wrap = $('<div class="' + o.component + '">').insertAfter(el.select)
+					.append(el.select);
+			}
+			if (!(el.value = el.select.siblings('.' + descendant('value') )).length) {
+				el.value = $('<span class="' + descendant('value') + '">')
+					.appendTo(el.wrap);
+			}
 
 			render();
 		}
@@ -61,6 +64,10 @@
 
 		function render() {
 			el.value.html(el.select.find(':selected').html());
+		}
+
+		function descendant(selector) {
+			return o.component + '-' + o[selector+'Class'];
 		}
 	}
 
