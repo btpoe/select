@@ -1,6 +1,8 @@
 # select
 No frills styling native select inputs.
 
+[View a demo](http://codepen.io/btpoe/details/VYxYyq)
+
 
 ## Setup
 

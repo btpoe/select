@@ -27,14 +27,16 @@ $jet: #222 !default;
 		min-width: 180px;
 
 		&:after {
-			content: '';
+			content: "";
 			width: 0;
 			height: 0;
-			border-width: 6px 4px 0;
-			border-color: $jet transparent transparent;
 			display: block;
 			position: absolute;
-			right: 1.5rem;
+			right: 1rem;
+			top: 50%;
+			margin-top: -3px;
+			border: 5px solid transparent;
+			border-top: 6px solid $jet;
 		}
 
 		select:focus + &,
