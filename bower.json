@@ -1,7 +1,7 @@
 {
   "name": "btpoe.select",
   "description": "No frills styling native select inputs.",
-  "version": "1.0.0",
+  "version": "1.0.alpha1",
   "main": "src/*",
   "ignore": [
     "**/*.txt",
