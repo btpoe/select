@@ -1,0 +1,33 @@
+{
+  "name": "btpoe/select",
+  "description": "No frills styling native select inputs.",
+  "version": "1.0.0",
+  "main": "src/*",
+  "ignore": [
+    "**/*.txt",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">=1.9.*",
+    "btpoe/select": ">=1.*"
+  },
+  "homepage": "https://github.com/btpoe/select",
+  "authors": [
+    "Brandon Poe <brandonpoe@me.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "jquery",
+    "styled",
+    "selects",
+    "selects",
+    "sass"
+  ],
+  "license": "MIT"
+}
